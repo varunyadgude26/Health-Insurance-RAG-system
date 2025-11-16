@@ -5,6 +5,7 @@ python-dotenv
 pydantic
 google
 llama-index
+python-multipart
 llama-index-core
 llama-index-embeddings-google
 llama-index-vector-stores-pinecone
