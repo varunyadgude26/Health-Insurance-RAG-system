@@ -3,7 +3,7 @@ uvicorn
 streamlit
 python-dotenv
 pydantic
-google-genai
+google
 llama-index
 llama-index-core
 llama-index-embeddings-google
