@@ -5,10 +5,6 @@ from llama_index.core import SimpleDirectoryReader
 
 
 class InsuranceDocumentProcessor:
-    """
-    Extract text using LlamaIndex SimpleDirectoryReader.
-    Supports PDF, DOCX, TXT, MD automatically.
-    """
 
     INSURANCE_KEYWORDS = [
         'coverage', 'deductible', 'copay', 'coinsurance', 'premium',
