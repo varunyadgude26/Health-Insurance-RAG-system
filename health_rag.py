@@ -279,9 +279,8 @@ class HealthInsuranceRAG:
                 "file_name": meta["file_name"],
                 "page_no": meta["page_no"],
                 "chunk_index": meta["chunk_index"],
-                "text_preview": meta["text_preview"],
-                "score": m["score"] 
-            })
+                "text_preview": meta["text_preview"]
+                })
 
 
         context_prompt = self.get_context_qa_prompt()

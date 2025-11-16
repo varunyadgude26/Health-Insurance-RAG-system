@@ -69,7 +69,6 @@ if st.button("Get Answer"):
                         **File:** {src.get('file_name')}  
                         **Page:** {src.get('page_no')}  
                         **Chunk_id:** {src.get('chunk_index')}
-                        **Similarity Score:** {src.get('score')}
                         ---
                         """)
                 else:
