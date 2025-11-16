@@ -1,5 +1,15 @@
 fastapi
 uvicorn
+streamlit
 python-dotenv
+pydantic
+google-genai
 llama-index
-
+llama-index-core
+llama-index-embeddings-google
+llama-index-vector-stores-pinecone
+pinecone
+python-docx
+PyPDF2
+fastapi
+requests
