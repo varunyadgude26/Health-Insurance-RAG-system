@@ -4,7 +4,7 @@ import json
 import os
 
 
-FASTAPI_URL = "http://127.0.0.1:8000"  
+FASTAPI_URL = "https://health-insurance-rag-system-vus6.onrender.com"  
 
 st.set_page_config(page_title="Health Insurance RAG", layout="wide")
 
