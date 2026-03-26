@@ -36,7 +36,6 @@ except Exception as e:
 else:
     init_error = None
 
-
 class QuestionReq(BaseModel):
     question: str
 
