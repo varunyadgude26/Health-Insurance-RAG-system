@@ -4,6 +4,7 @@ import re
 from llama_index.core import SimpleDirectoryReader
 
 
+
 class InsuranceDocumentProcessor:
 
     INSURANCE_KEYWORDS = [
@@ -48,7 +49,6 @@ class InsuranceDocumentProcessor:
                     })
 
         return pages
-
 
     def validate_insurance_document(self, file_path: str) -> Tuple[bool, str]:
 
