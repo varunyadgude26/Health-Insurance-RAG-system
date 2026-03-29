@@ -84,7 +84,6 @@ async def ask_question(req: QuestionReq):
     resp = rag.query_policy(q)
     return resp
 
-
 @app.get("/")
 def root():
     return {"message": "Health Insurance RAG (Gemini + Pinecone) is running."}
