@@ -25,7 +25,6 @@ TOP_K = 5
 DEFAULT_CHUNK_SIZE = 800
 DEFAULT_CHUNK_OVERLAP = 100
 
-
 class HealthInsuranceRAG:
     def __init__(self):
         self.genai_client = genai.Client(api_key=GEMINI_API_KEY)
@@ -69,7 +68,6 @@ class HealthInsuranceRAG:
         return resp.text.strip()
 
     def process_insurance_documents(self, file_paths: List[str]):
-
 
         vectors_to_upsert = []
         total_chunks = 0
