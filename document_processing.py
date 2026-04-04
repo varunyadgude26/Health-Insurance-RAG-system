@@ -15,7 +15,6 @@ class InsuranceDocumentProcessor:
         'hospital', 'claim', 'claim form'
     ]
 
-
     def extract_text(self, file_path: str) -> List[Dict]:
 
         file_path = str(file_path)
@@ -47,7 +46,6 @@ class InsuranceDocumentProcessor:
                         "page_no": 1,
                         "text": doc.text
                     })
-
         return pages
 
     def validate_insurance_document(self, file_path: str) -> Tuple[bool, str]:
