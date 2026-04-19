@@ -86,4 +86,4 @@ async def ask_question(req: QuestionReq):
 
 @app.get("/")
 def root():
-    return {"message": "Health Insurance RAG (Gemini + Pinecone) is running."}
+    return {"message": "Health Insurance Management System"}
