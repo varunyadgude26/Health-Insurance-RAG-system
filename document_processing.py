@@ -3,8 +3,6 @@ from typing import List, Dict, Tuple
 import re
 from llama_index.core import SimpleDirectoryReader
 
-
-
 class InsuranceDocumentProcessor:
 
     INSURANCE_KEYWORDS = [
@@ -65,7 +63,6 @@ class InsuranceDocumentProcessor:
             return False, "Document does not appear strongly insurance-related."
 
         return True, "Valid insurance-related document."
-
 
     def chunk_text(self, text: str, chunk_size: int = 800, overlap: int = 100) -> List[str]:
 
