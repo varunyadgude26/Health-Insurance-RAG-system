@@ -38,7 +38,6 @@ class InsuranceDocumentProcessor:
                         "page_no": page_no,
                         "text": doc.text
                     })
-
                 else:
                     pages.append({
                         "page_no": 1,
@@ -53,12 +52,11 @@ class InsuranceDocumentProcessor:
 
         if not combined_text.strip() or len(combined_text) < 200:
             return False, "Document seems too short or mostly empty."
-
+            
         matches = sum(
             1 for kw in self.INSURANCE_KEYWORDS
             if kw.lower() in combined_text.lower()
         )
-
         if matches < 2:
             return False, "Document does not appear strongly insurance-related."
 
