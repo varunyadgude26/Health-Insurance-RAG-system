@@ -39,7 +39,6 @@ else:
 class QuestionReq(BaseModel):
     question: str
 
-
 @app.post("/system-upload-documents")
 async def upload_documents(files: List[UploadFile] = File(...)):
 
