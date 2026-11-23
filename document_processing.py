@@ -31,7 +31,6 @@ class InsuranceDocumentProcessor:
 
         for doc in docs:
             if doc.metadata.get("file_name") == file_name:
-
                 if "page_label" in doc.metadata:
                     page_no = int(doc.metadata["page_label"])
                     pages.append({
@@ -63,7 +62,6 @@ class InsuranceDocumentProcessor:
         return True, "Valid insurance-related document."
 
     def chunk_text(self, text: str, chunk_size: int = 800, overlap: int = 100) -> List[str]:
-
         if not text:
             return []
 
